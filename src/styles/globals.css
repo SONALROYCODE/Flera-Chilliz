@@ -1,0 +1,58 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+
+@layer base {
+  * {
+    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+  }
+  body {
+    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background-color: #ffffff;
+    color: #000000;
+  }
+}
+
+/* Clean White Background */
+.flera-bg-ambient {
+  background-color: #ffffff;
+}
+
+.silk-wave-pattern {
+  display: none;
+}
+
+/* Glassmorphism card — white glass on light bg */
+.flera-card-glass {
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(20px);
+  -webkit-backdrop-filter: blur(20px);
+  border: 1px solid rgba(0, 0, 0, 0.06);
+}
+
+/* Pill shadow */
+.flera-pill-shadow {
+  box-shadow: 0 14px 35px -8px rgba(0, 0, 0, 0.12), 0 4px 12px -2px rgba(0, 0, 0, 0.07);
+}
+
+/* Blue glow */
+.flera-blue-shadow {
+  box-shadow: 0 20px 40px -10px rgba(13, 73, 255, 0.35);
+}
+
+/* Dark button shadow */
+.flera-btn-dark-shadow {
+  box-shadow: 0 16px 36px -8px rgba(0, 0, 0, 0.30), 0 6px 16px -4px rgba(0, 0, 0, 0.18);
+}
+
+/* Hide scrollbar utility */
+.no-scrollbar::-webkit-scrollbar {
+  display: none;
+}
+.no-scrollbar {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
+
